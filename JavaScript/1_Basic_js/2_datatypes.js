@@ -51,7 +51,7 @@ console.log(typeof(iAmUseless2));//output is object
 //interview question 2 What is NAN--Not A Number
 //NaN is a property of global object
 //In other words,its a variable in global scope
-//inintal value of NaN is not a number
+//initial value of NaN is not a number
 console.log("==============NAN AND FUNCTION================");
 var myPhoneNumber=0987654321;
 var myName="tanmay";

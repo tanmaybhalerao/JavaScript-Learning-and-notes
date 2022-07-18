@@ -23,18 +23,18 @@ console.log(`size of the array friends is ${size}`);
 
 console.log("==============Operations on the array==========");
 //1 Traverasal of array
-//2 searching and filter inn an array
+//2 searching and filter in an array
 //3 how to sort and compare  an array
 //4 crud in array
 //5 map()  reduce () filter()
 
 
 ///traversing or navigationn in the array
-//unsing loop for in and for of
+//using loop for in and for of
 console.log("Looping in the array==========");
 
 
-//We can iterate throught the array in the array by 3 ways
+//We can iterate throug the array  by 3 ways
 //1 .. traditional loop for loop or while,do-while loop 
 console.log("================Traditional method in for loop");
 for (var i = 0; i < friends.length; i++) {
@@ -60,16 +60,17 @@ for (let element of friends) {
 }
 
 ///forEach in the array
-//in for each function we are using the
+//for each function we are using the
+
 friends.forEach(function (element, index, array) {
     console.log(element + " " + "index :" + index + "array:" + array);
 });
 
 //by modern fat arrow function
-friends.forEach((element, index, array){
-    //here we are dealing with fat arrow function instead of the traditionla function
-    //the only drawback of fat arrow function is that we can not use this keyword  or fat arrow function  doesn't support
+friends.forEach((element, index, array)=>{
+    //here we are dealing with fat arrow function instead of the traditional function
+    //the only drawback of fat arrow function is that we can not use "this" keyword  or fat arrow function  doesn't support
     //this keyword
     console.log(element + " " + "index :" + index + "array:" + array);
-})
+});
 

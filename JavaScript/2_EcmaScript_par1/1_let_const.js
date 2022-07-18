@@ -5,7 +5,7 @@
 //Difference between let ,const and var 
 //this is the famous interview question of most the companies
 //const is used to declare the constant value .
-//the value which never be changed is called is called constant
+//the value which never be changed is called as constant
 
 const pi = 3.14;
 console.log("The pi value is :" + pi);//we can't change the value of of pi it gives error

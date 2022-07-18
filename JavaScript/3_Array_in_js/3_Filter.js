@@ -11,3 +11,5 @@ var  less_500 = price.filter((element,idx)=>{
 });
 //all element satifies the condition are stored in
 console.log(less_500);
+
+console.log("Filter method return the new array");

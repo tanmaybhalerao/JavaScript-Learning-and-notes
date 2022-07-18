@@ -6,7 +6,7 @@
 //for loop
 // for in loop
 // for of loop
-// conditionla ternary
+// conditional ternary
 
 //if else syntax
 {

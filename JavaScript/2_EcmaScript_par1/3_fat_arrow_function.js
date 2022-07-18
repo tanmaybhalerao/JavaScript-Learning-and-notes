@@ -1,6 +1,6 @@
 //difference between fat arrow function and traditional function
-//traditional functional declare anywhere in the function
-//in simple words  we can call function before we define it 
+//traditional function can be  declared anywhere in the function
+//in simple words  we can call function before we define it (while writing it at least)
 //js is interpreter language
 
 function total()//traditional function in  js

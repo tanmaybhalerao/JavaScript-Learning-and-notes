@@ -29,7 +29,7 @@ console.log(total());
 
 //Function Argument and Function parameter
 //Function parameter are the values which are listed in the function defination
-//Function Argument are the real values passed to the function  
+//Function Argument are the real values passed to the function  while calling
 
 {
     console.log("========================Difference between function pararmeter and argument========")
