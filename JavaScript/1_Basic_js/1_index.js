@@ -7,7 +7,7 @@ var myName="Tanmay";
 var _my_Name="ok";
 var $myName="dollar";
 var my_2_Name="name 2";
-//Special characters are not allowed in js below are few examples
+//Special characters are not allowed (exclude $ and _ )in js below are few examples
 
 
 // var my%name="tanmay";

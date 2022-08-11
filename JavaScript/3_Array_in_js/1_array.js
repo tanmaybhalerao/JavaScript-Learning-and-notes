@@ -54,6 +54,7 @@ for (let element in friends) {
 
 console.log("===for of loop in the array ===");
 ///================for of  loop
+//We can also iterate through string by using the for of loop .o/p as single char
 for (let element of friends) {
     console.log(element)//op will be the actual elemnts of the array not the index 
     //and that is the differenc between for in and for of loop

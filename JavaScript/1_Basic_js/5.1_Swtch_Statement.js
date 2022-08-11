@@ -1,4 +1,4 @@
-//Swtch statement is part of the control statement 
+//Switch statement is part of the control statement 
 //switch statement evaluetes the expression and match the value with case value
 //Syntax:
 

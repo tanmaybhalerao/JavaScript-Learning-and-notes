@@ -4,7 +4,7 @@ console.log("==================Default parameter in function defination=========
 //without any  error default paramter gets filled in that variable
 
 function total(a = 10, b = 1) {
-    return(a+b);//here if user dont any value while calling the function we get op as 11.
+    return(a+b);//here if user dont pass any value while calling the function we get op as 11.
 
 }
 

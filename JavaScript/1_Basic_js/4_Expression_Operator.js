@@ -15,7 +15,7 @@ var y=10;
 console.log("===============================assignment operator==================");
 console.log("jai shree ram");
 console.log(x==y);
-console.log("Is x and y bothe are equal "+(x==y));
+console.log("Is x and y both are equal "+(x==y));
 
 //2 Arithmetic operator
 //Addition

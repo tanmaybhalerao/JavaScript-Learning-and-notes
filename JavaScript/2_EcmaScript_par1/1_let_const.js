@@ -5,14 +5,14 @@
 //Difference between let ,const and var 
 //this is the famous interview question of most the companies
 //const is used to declare the constant value .
-//the value which never be changed is called as constant
+//the value which never going to be changed is called as constant
 
 const pi = 3.14;
 console.log("The pi value is :" + pi);//we can't change the value of of pi it gives error
 // /pi = 123;//it gives Typeerror:Assignment to constant variable.
 
 //difference between var and let 
-//let and const are block level element and var are function level
+//let and const are block level element and var is function level
 //In simple words existance of the let and const is within { } braces only
 
 // example1=====================================
@@ -34,7 +34,7 @@ console.log(myName + " these is var variable inside the function");
 
 // =================================Template literals=====================
 // we can say that template literals are the alternative of string concatenation
-//we can simply use string template instaed of concatenation
+//we can simply use string template instead of concatenation
 // we use `` 
 //${ --}  for variables.
 

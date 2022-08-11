@@ -7,7 +7,7 @@ var friends = ["akash", "vedant", "Akshay", "Dipak", "vedant"];
 //it takes 2 parameter in that 1 is optional 
 //first one is element to be searched and second is from which index to be searched
 // when 2 nd parameter is not given it start searching from 0
-// it is case sensitive + it search in forward direction only
+// it is case sensitive + it search in forward direction only -->
 //when no result gets matched it returns -1
 let op = friends.indexOf("Akshay");
 console.log(op);
@@ -18,7 +18,7 @@ friends.indexOf("akash", 1)//here op is -1 because it start serching for akash f
 
 //lastIndexOf()
 //the difference between index and last index is that index of start searching in forward direction
-//and last index start searching from the backward direction 
+//and last index start searching from the backward direction <--
 
 console.log(friends.lastIndexOf("vedant"));//op is 4
 

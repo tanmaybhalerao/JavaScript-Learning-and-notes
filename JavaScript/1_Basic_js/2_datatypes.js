@@ -6,6 +6,8 @@ console.log("data types in js");
 // String
 // BigInt
 // Symbol
+
+
 //typeof() operator is used to find the data type of variable
 
 var a1;

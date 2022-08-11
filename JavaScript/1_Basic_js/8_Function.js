@@ -1,6 +1,6 @@
 console.log("======================Function in javascript====================");
 //Function in js
-//function in javascript is block of code which is designed to a particular task
+//function in javascript is block of code which is designed to perform a particular task
 //functiom defination is also known as function declaration or function statement
 
 
@@ -22,9 +22,9 @@ function total() {
     var b = 11;
     console.log(a + b);
     return (-1);
-}
+}//<---- function defination
 
-console.log(total());
+console.log(total());//<--- callling the function
 
 
 //Function Argument and Function parameter
@@ -49,7 +49,7 @@ console.log(total());
 
 //================Function Expression in javascript=======================
 console.log("=========================\n\n===============Function Expression=========");
-//function expression simply means create the function and put it into the variable.
+//function expression simply means creating  the function and put it into the variable.
 //Example 1:
 
 {
@@ -78,7 +78,7 @@ console.log("====================Example 2====================");
 
 
 //Anonymus function:
-//A function which don't have any name is called anonymous function
+//A function which does't have any name is called annonymous function
 //anonymus function has the same syntax as normal or named function in js
 
 
