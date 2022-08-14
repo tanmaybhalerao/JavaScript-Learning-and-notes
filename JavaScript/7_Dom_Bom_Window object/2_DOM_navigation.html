@@ -1,0 +1,87 @@
+<!-- Notes are at bottom -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Navigation</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            font-size: 80px;
+
+        };
+        div{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="child-one">
+            <p>I am child one</p>
+        </div>
+        <div class="child-two">
+            <p>I am child two</p>
+        </div>
+        <div class="child-three">
+            <p>I am child three</p>
+        </div>
+    </div>
+</body>
+<script>
+// <!-- 
+//     html is the root element in the dom structure
+// we can say that html is parent of each element and we can 
+// traverse through from top to bottom -->
+
+
+// <!-- =========================DOM NAVIGATION============== -->
+
+// <!-- find the number of child nodes use:
+    var no_nodes=document.body.childNodes
+    console.log(no_nodes)
+    // it includes text,whitspaces and many other things
+    // and you dont get exactly what u want.
+
+    no_nodes=document.body.children
+    //by using children u get exact count of children or actual element.
+    console.log(no_nodes);
+
+
+
+    //hasChildNode method is used to elemetn have child or not
+    console.log("==========hasChildNode() method to find out child or not");
+    console.log(document.body.hasChildNodes());
+    //it returns true or false
+
+//Accessing the first child 
+const first_Child=document.body.firstElementChild.firstElementChild;
+//here first element is main-div and its first child is child one
+//and we are storing these in firs_child variable
+first_Child.style.color="red";
+
+
+
+//How to find parent of the element
+//To find the parent node we use parentnode 
+const find_parent=first_Child.parentElement;
+console.log("finding the parent")
+// console.log(find_parent);
+
+
+
+//Finding the siblings 
+//There are two types of siblings previous and next sibling
+// previous means upward and next means downward
+console.log("====finding the sibling =======================");
+document.head.nextElementSibling//it gives body as next sibling
+document.body.previousElementSibling//it gives body as next sibling
+
+
+</script>
+</html>
+

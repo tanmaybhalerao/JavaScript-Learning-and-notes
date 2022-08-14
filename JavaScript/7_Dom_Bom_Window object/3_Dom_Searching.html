@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Searching</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <p id="1">This is p1 with id 1</p>
+        <p id="2">This is p2 with id 2</p>
+        <p id="q1">This is query selector example</p>
+        <p class="c1">This is class with c1</p>
+        <br>
+        <span>This is span tag </span>
+        <br>
+        <button type="click" onclick="changeByID()">change By id</button>
+        <button type="click" onclick="changeByClass()">change By class</button>
+        <button type="click" onclick="changeByTagName()">change By Tag Name</button>
+        <button type="click" onclick="changeByQuery()">change By queryselector</button>
+    </div>
+    <script>
+//getElementById return single element 
+        const changeByID = () => {
+            document.getElementById('1').innerHTML = "text Changed due to click of button changeByID ";
+        }
+        const changeByClass = () => {
+
+            alert("getElementByClassNames return array of the elements to access them one by one you need to use loops");
+//getElementByClassNames return array of the elements to access them one by one you need to use loops
+
+
+            console.log(document.getElementsByClassName('c1'));
+            var arr = document.getElementsByClassName('c1');
+            //Loop to access one by one element
+            for (let element of arr) {
+                element.innerHTML = "Text changed due to click of change by class";
+            }
+        }
+
+//Accessing and seraching by tagName
+        //These method is simmilar to get by className (we are getting multiple elements)
+        //the main differenc is here we can searching based on tag names
+        const changeByTagName=()=>{
+            const tag=document.getElementsByTagName("span");
+            for(let element of tag){
+
+                element.innerHTML="Text Chaged due to click of change by tagname";
+            }
+            
+        }
+//Accessing and seraching by queryselector
+
+
+        //querySelector returns first element of the search 
+        //querySelector all returns all elements of the search and return array 
+        const changeByQuery=()=>{
+            var selection=prompt("please input selection 1 for change by ID 2 for change by class 3 for change by tag name");
+            switch (selection) {
+               //Query selector for id
+               case '1':
+                   document.querySelector("#q1").innerHTML="Changed by Query selector";
+                   break;
+                   
+                //Query selector for class
+                case '2':
+                    document.querySelector(".c1").innerHTML="Changed by Query selector";
+                    break;
+                //Query selector for TagName
+                    case '3':
+                        document.querySelector("span").innerHTML="Changed by Query selector";
+                        break;
+                
+                default:
+                    alert("Enter valid input");
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
