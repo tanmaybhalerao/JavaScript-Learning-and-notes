@@ -16,13 +16,13 @@
 var Area="Square";
 switch (Area) {
     case "Square":
-        console.log("Area of the square is: l**2");
+        console.log("Area of the square");
         break;
     case "Reactangle":
-        console.log("Area of the Reactangle is: l**2");
+        console.log("Area of the Reactangle ");
         break;
     case "Square":
-        console.log("Area of the square is: l**2");
+        console.log("Area of the square ");
         break;
 
     default:

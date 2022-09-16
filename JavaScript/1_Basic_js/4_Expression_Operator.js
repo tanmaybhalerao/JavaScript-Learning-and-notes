@@ -26,7 +26,7 @@ console.log("Is x and y both are equal "+(x==y));
 console.log("=====================Arithmetic operator==================");
 var a=81;
 var b=8;
-console.log("Value of and b is: "+a+" "+b);
+console.log("Value of a and b is: "+a+" "+b);
 console.log("Addition: "+(a+b));
 console.log("Substraction: "+(a-b));
 console.log("Multiplication: "+(a*b));
@@ -35,7 +35,7 @@ console.log("Modulo : "+(a%b));
 
 //Increment and Decrement Operator 
 console.log("================Increment and decrement operator================");
-console.log("value of and  a and  b is :"+ a+" "+ b);
+console.log("value of   a and  b is :"+ a+" "+ b);
 //prefix and postfix
 // a=81 and b=8
 console.log("prefix value: "+ a++);
@@ -103,7 +103,7 @@ console.log("================swapping of the number without the variable========
 
 }
 //Interview Question 
-//What is difference bwetween == and ===
+//What is difference between == and ===
 // == check by value
 //=== check by reference or type 
 console.log("========================Interview Question difference between ===  and ==");

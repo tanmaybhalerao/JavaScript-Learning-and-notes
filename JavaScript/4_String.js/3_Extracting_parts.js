@@ -5,7 +5,7 @@
 //3. substr(start ,length)
 
 
-//Focus more on slice, itresolves all ur problem u can simply ignore rest 2 methods
+//Focus more on slice, it resolves all ur problem u can simply ignore rest 2 methods
 
 
 //1 Slice method 

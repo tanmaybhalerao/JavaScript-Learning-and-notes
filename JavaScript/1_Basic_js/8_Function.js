@@ -1,7 +1,7 @@
 console.log("======================Function in javascript====================");
 //Function in js
 //function in javascript is block of code which is designed to perform a particular task
-//functiom defination is also known as function declaration or function statement
+//function defination is also known as function declaration or function statement
 
 
 //function defination
@@ -17,7 +17,7 @@ console.log("======================Function in javascript====================");
 //2.calling the function
 
 function total() {
-    console.log("Calling the function total");
+    console.log(" In function total ");
     var a = 10;
     var b = 11;
     console.log(a + b);

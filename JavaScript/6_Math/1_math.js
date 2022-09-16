@@ -3,7 +3,7 @@ console.log(Math.PI)
 
 //round function is used to roundoff to the nearest integer value
 console.log("===========Round of function========")
-console.log(Math.round(6.5))//round the value to the nearest integer
+console.log(Math.round(6.5))//round the value to the nearest integer(0-4 current value without decimal 5-9 next value)
 
 //Math.pow(x,y)
 console.log("=============Math.pow function=======");

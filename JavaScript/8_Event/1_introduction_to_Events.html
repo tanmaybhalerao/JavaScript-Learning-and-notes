@@ -1,0 +1,141 @@
+<!-- First read bottom notes section -->
+<!-- Then take respective ref and read and understand the script  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(248, 217, 217);
+
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <button onclick="alert('I am awesome but no one use me')">By Inline alert event occured</button>
+        <button onclick="callingFunction()">By calling the function</button>
+        <button id="thirdway">By using the inline events</button>
+        <button id="fourthway">By event listners</button>
+        <button id="event_obj">Check Event object</button>
+        <button id="another_one" ondblclick="alert('You clicked double');">double clicked</button>
+
+
+
+    </div>
+
+
+
+
+
+    <script>
+        //2nd way of calling the function
+        const callingFunction = () => {
+            alert("background color gets changed due to calling the function");
+            document.body.style.backgroundColor = 'red';
+        }
+
+        //3rd way 
+
+        const thirdway = document.getElementById("thirdway");
+        thirdway.onclick = () => {
+            const prevdata = document.body.innerHTML;
+            alert('third way of calling the function');
+            document.body.innerHTML = "Third way of calling the function is implemented ." + prevdata;
+
+
+        }
+
+        //4th way addEventListner
+        //3 parameters 1 optional
+        //1st type of event and second one is callback function
+        const fourthway = document.querySelector("#fourthway");
+        fourthway.addEventListener('click', () => {
+            alert("addEventistner is implemented ");
+            document.body.style.fontSize = "100px";
+        });
+
+
+            //why to use addevent listner?
+            //the drawback of the normal calling function event is
+            //once you overwrite the function previous body of the function is never been used
+            //and when event occured it occured only once
+
+            //By using the addevent listner you can write multiple functionalities seperately
+            // and they occur from top to bottom as you write inside the code.
+
+
+        //Event object and use
+        const event_obj=document.getElementById("event_obj");
+        const checkEvent=()=>{
+           alert("check event gets initilized");
+           console.log(event);
+           console.log(event.target);
+           console.log(event.type);
+        }
+        event_obj.addEventListener('click',checkEvent);
+
+
+    </script>
+</body>
+
+</html>
+<!-- Notes section -->
+
+<!-- Events in javascripts
+    html events are things that happens to html pages.
+    when js is used in html pages ,js react on these events.
+
+    //HTML events
+    An html event can be something the browser does ,or something the a user does
+
+    //some examples of events
+    web page finished its loading
+    input field was changed
+    html button clicked
+    events happen do something
+
+
+    //js lets you execute code when events are detected.
+    //html allows event handler attributes ,with js code to be added to html elements
+ -->
+
+
+
+
+<!-- 
+    4 ways of writing events in js
+        1.using inline events alert();//rarely used
+        2.By calling the function (most commonly used)
+        3.By using inline events (based on id class or anything )
+        4.using the event listners(addEventListner and IE's attachevent)
+
+
+    <!-What is Event Object ?
+    Event object is the parent object of the event object
+    this is used to find out the details of the event occured
+    simply it gives all the information related to the event happend recently
+    example:
+    mouseevents
+    onclick
+
+
+
+
+
+
+  
+
+
+
+  -->

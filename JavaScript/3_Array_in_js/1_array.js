@@ -1,8 +1,8 @@
 //Generally Array is a collection of element of the same datatype
 //but in javascript we can store differet type of values into the arrays
 
-//Ways to create the array
-//Array class  .arrays are the prototypes in the  js 
+//Ways to create the array.
+//Array class  .arrays are the prototypes in the  js.
 
 var friends = ["akash", "vedant", "Akshay", "Dipak"];
 console.log(friends);

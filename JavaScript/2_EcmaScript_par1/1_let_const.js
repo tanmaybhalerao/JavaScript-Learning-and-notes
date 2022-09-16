@@ -9,7 +9,7 @@
 
 const pi = 3.14;
 console.log("The pi value is :" + pi);//we can't change the value of of pi it gives error
-// /pi = 123;//it gives Typeerror:Assignment to constant variable.
+// /pi = 123;//it gives Type error:Assignment to constant variable.
 
 //difference between var and let 
 //let and const are block level element and var is function level
