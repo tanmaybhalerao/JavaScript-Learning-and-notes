@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard event in javascript</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction:column;
+            background-color: rgb(49, 49, 206);
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h2>Keyboard in javascript</h2>
+    <br />
+    <div>
+        <input type="text" id="input" onkeydown="keyDown()" onkeyup="keyUp()" onkeypress="keyPress()">
+        <br />
+    </div>
+    <div id="message"></div>
 </body>
+<script>
+    // keydown function
+    function keyDown() {
+        str = event.key;
+        document.getElementById('message').innerText = str+" key is down";
+    }
+
+    function keyUp() {
+        str = event.key;
+        document.getElementById('message').innerText = "key is up";
+        //Turning the text to uppercase 
+        let input=document.getElementById("input").value;
+        document.getElementById("input").value=input.toUpperCase();
+        
+    }
+
+</script>
+
 </html>

@@ -1,6 +1,6 @@
 //Window vs DOM
 //================Window Object===========================
-//1. window is a global object each everything on browser
+//1. window is a global object each and everything on browser
 // screen is a part of window
 
 //2.Each and everything visible on webpage is part of window object
@@ -15,7 +15,7 @@
 
 //=================DOM===============================
 //1.DOM is a part of window object
-//in simple words we can say that windown is parent and DOM is child
+//in simple words we can say that window is parent and DOM is child
 
 //2.The page visible under the address bar section  is DOM
 

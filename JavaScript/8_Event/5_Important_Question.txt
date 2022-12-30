@@ -1,0 +1,9 @@
+What is difference between addeventlistner and onXXX events ? 
+->Both are used to fire the event but the key difference is
+when you write 2 or more function/code for same event then it gets override
+means latest or last function get executed and earlier function never get used.
+
+But by using the add event listner function you can handle such situations
+where we need to add on more fucntion or action for that event.
+
+note: addeventlistner is not work in internet explorer

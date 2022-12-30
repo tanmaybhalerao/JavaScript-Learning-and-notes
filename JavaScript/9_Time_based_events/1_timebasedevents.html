@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Based Events</title>
+    <style>
+         body{
+            background-color: rgb(35, 35, 141);
+            display: flex;
+            color: goldenrod;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Set Time out</h2>
+            <p>by using settimeout ,function will be called after few time </p>
+            <p>click submit button to result will come out after few seconds</p>
+            <p>To stop the execution of timeout event hit the cancel button</p>
+            <button onclick="myvar=setTimeout(timeout,3000)">Submit</button>
+            <button onclick="clearTimeout(myvar)"  >cancel</button>
+        </div>
+
+        <hr>
+        <div>
+            <h2>SetTime Interval </h2>
+            <p id="demo"></p>
+            <button onclick="mycounter=setInterval(counter,1000)">Start counter</button>
+            <button id="remove-counter"  onclick="clearTimeout(mycounter)">stop counter</button>
+        </div>
+
+
+        <div>
+            <hr>
+            <p>There is one important thing to note here that when settimeinterval is get called it delay by the same time as mentioned in milliseconds area </p>
+        </div>
+    </div>
+</body>
+<script>
+    function timeout(){
+        alert("Timeout function gets called after 3 seconds delay");
+    }
+
+    function counter(){
+        let time=new Date();
+        document.getElementById("demo").innerText=time.toLocaleString();
+    }
+    
+    let remcon=document.getElementById("remove-counter");
+    remcon.addEventListener("click",()=>{
+    document.getElementById("demo").innerText="";
+    });
+    
+</script>
+</html>
+
+<!-- Notes:
+time based events are the parts of window object
+
+// The windows object allows execution of code at specified time intervals.
+
+//These timeinteravls are called timing events
+
+//the two key methods to use with javascript
+//setTimeOut
+//setTimeout(function,milliseconds)---to stop use clearTimeout
+
+//to stop the execution of the settimeout function we use clearTimeout function
+//to execute the clear timeout we need the reference  variable name  like myvar pass these value in the cleartime out function
+
+//setInterval(function,milliseconds)--- to stop use clearInterval function
+
+
+ 
+
+Notes:::
+There is one important thing to note here that when settimeinterval is get called it delay by the same time as mentioned in milliseconds area
+-->

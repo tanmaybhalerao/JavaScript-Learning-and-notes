@@ -19,7 +19,7 @@ new Date();
 let currdate=new Date();//new date always by default it gives current date and time
 console.log(currdate);//In node console it gives different time ie.022-07-26T04:52:15.747Z
 //If u copy this code in  browser console  then you get india time
-//India is 5 hour 30 minutes of greenwich mean time.(GMT)
+//India is 5 hour 30 minutes ahead of greenwich mean time.(GMT)
 //If we want browser time in node then use tostring method
 console.log(currdate.toString());//  Tue Jul 26 2022 10:30:35 GMT+0530 (India Standard Time)
 

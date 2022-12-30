@@ -1,0 +1,9 @@
+The differece between settimeinterval and settimeout?
+-->
+settimeout  callls the function exactly once after specific time
+settimeinterval  calls the function again and again after specific time interval
+
+
+settimeout  can be stopped using cleartimeout function
+
+settimeinterval  can be stopped by using cleartimeinterval

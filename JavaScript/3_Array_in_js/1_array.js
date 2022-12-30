@@ -62,7 +62,7 @@ for (let element of friends) {
 
 ///forEach in the array
 //for each function we are using the
-
+console.log("For each loop =============");
 friends.forEach(function (element, index, array) {
     console.log(element + " " + "index :" + index + "array:" + array);
 });

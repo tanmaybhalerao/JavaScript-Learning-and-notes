@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propogation </title>
+    <script>
+
+    </script>
+    <style>
+        body{
+            background-color: aqua;
+            margin: 50px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+        }
+        .box{
+                border: 3px solid red;
+                padding: 50px;
+        }
+        #id-1 ,#id-4,#id-7{
+            background-color: cornflowerblue;
+        }
+        #id-2,#id-5,#id-8{
+            background-color: rgb(107, 120, 145);
+        }
+        #id-3,#id-6,#id-9{
+            background-color: rgb(31, 35, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="id-1"  >
+        <h1>Capture event propogation</h1>
+        <hr>
+        <h1>Super parent </h1>
+        <div class="box" id="id-2" >
+            <h3>Parent</h3>
+            <div class="box" id="id-3" >
+                <h3>Child</h3>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="id-4" onclick="alert('super')">
+        
+        <h1>Bubble event propogation</h1><hr>
+        <h1>Super parent </h1>
+        <div class="box" id="id-5" onclick="alert('parent')" >
+            <h3>Parent</h3>
+            <div class="box" id="id-6"  onclick="alert('child')" >
+                <h3>Child</h3>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="id-7" onclick="alert('super')">
+        <h1>Target event propogation</h1>
+        <hr>
+        <h1>Super parent </h1>
+        <div class="box" id="id-8" onclick="alert('parent')" >
+            <h3>Parent</h3>
+            <div class="box" id="id-9" onclick="target_prop()">
+                <h3>Child</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // Capturing Propagation top to bottom 
+    //bubble Propogation is by default
+    // to stop any kind of propagation we use event.stopPropogation();
+    var superP=document.getElementById("id-1");
+    var parent=document.getElementById("id-2");
+    var child=document.getElementById("id-3");
+    //third parameter is phase of propogation  in addevent listner which is boolean
+    //by default is false
+    //Used to achieve the Capturing Propogation event
+
+    child.addEventListener("click",()=>{alert("child")},true);
+    parent.addEventListener("click",()=>{alert("parent")},true);
+    superP.addEventListener("click",()=>{alert("super")},true);
+    
+    //Target Propogation or stop other propogation
+    var targetProp=document.getElementById("id-9");
+    const target_prop=()=>{
+        alert("You hit the target[child ] And we are using targetPropogation ");
+        event.stopPropagation();
+    }
+
+</script>
+
+</html>
+<!-- Notes
+Event Propogation in javasript:
+There are 3 propogations 
+1.Bubbling-- -> bottom to top
+2.Capturing -- -> top to bottom
+3.Target -- -> Target
+
+
+
+
+--Bubbling Propogation is by default in nature
+--To achieve the Capturing propogation we need to use addevent listner and add the third parameters that is true or false -- by default false we need to make it as true 
+
+--Target event Propogation:
+sometime their is a scenario where we just need to call the event on the specific  target only at such cases we use target propogation .
+
+
+
+
+
+
+
+
+
+-->

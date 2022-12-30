@@ -1,0 +1,107 @@
+<!--Note: 
+    Input events are most important event during the validation of the forms.
+    Input events occurs when user input or change in input fields 
+    such as radio buttons check buttons etc..
+    Input events are majorly used for validation purposes.
+
+    Commonly used input events
+    1.Onblur--leaves input fields
+    2.onchange-- changes in input field
+    3.onfocus-- when an input field get into used or in focus
+    4.onselect--when input field get selected.
+    5.onsubmit--when user hit the submit button.
+    6.onreset--when the user clicks the reset buttons
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input events in javascript</title>
+    <style>
+        body{
+            background-color: rgb(35, 35, 141);
+            display: flex;
+            color: goldenrod;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .nameInput{
+            border-radius: 50px;
+            height: 30px;
+            text-align: center;
+            border-color: red;
+            border-width: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <label for="">OnBlur Event----></label>
+        <input type="text" class="nameInput" id="input1" placeholder="Enter your text here">
+        <br>
+        <label for="">OnChange Event----></label>
+        <input type="text" class="nameInput" id="input2" placeholder="Enter your text here">
+        <br>
+        <label for="">OnFocusEvent----> </label>
+        <input type="text" class="nameInput" id="input3" placeholder="Enter your text here">
+        <br>
+        <label for="">OnSelectEvent----> </label>
+        <input type="text" class="nameInput" id="input4" placeholder="Enter your text here" value="jai shree ram">
+        <p id="txt"></p>
+        <input type="submit" value="submit">
+    </div>
+</body>
+    <script>
+        // 1.onblur event occured when the user removes the focus from input field or click on something else
+
+        var input=document.querySelector("#input1");
+        input.addEventListener("blur",()=>{
+            str='';
+            input.value=input.value.toUpperCase();
+            alert("Onblur events gets occured");
+        });
+
+
+        //2.Onchange event occured when the user change the content input field.
+        
+        var input2=document.querySelector("#input2");
+        input2.addEventListener("change",()=>{
+            str='';
+            input2.value=input2.value.toUpperCase();
+            alert("Onchange events gets occured");
+        });
+
+        //Difference between onchange and onblur
+        //onblur event occured when the user removes the focus from input field.
+        //weather you change something in the input field or not 
+
+        //onchange event occured when user removes the focus from input field AND
+        //some changes are made in input field.
+        
+        //3.OnFocusEvent
+        //onfocus event gets occured when input get into the focus
+         var input3=document.querySelector("#input3");
+         input3.addEventListener("focus",()=>{
+            
+             input3.style.background="Yellow";
+             console.log("inside the focus");
+         });
+         //Never user alert statement in focus because it gets called as long as focus is inside the input field
+
+
+         //4.onselect Event occured when you select some part by using the mouse only inside the input box
+
+         var input4=document.querySelector("#input4");
+         input4.addEventListener("select",()=>{
+            alert("Onselect Event gets called");
+            document.getElementById("txt").innerText="You selected something ";
+         });
+    </script>
+</html>
